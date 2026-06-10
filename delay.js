@@ -1,0 +1,5 @@
+function randomDelay(min = 8000, max = 15000) {
+  const ms = Math.floor(Math.random() * (max - min + 1) + min);
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+module.exports = { randomDelay };
